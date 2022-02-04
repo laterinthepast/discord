@@ -381,6 +381,11 @@ navbar .nav-items .nav-item a {
   font-weight: 300;
 }
 
+.about-text p {
+  font-size: 1.3vw;
+  line-height: 1.5;
+}
+
 .about-text h1 {
   margin-bottom: 1.5vw;
   font-weight: 900;
