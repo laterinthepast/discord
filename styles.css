@@ -1,0 +1,264 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,800&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+}
+
+.btn-primary {
+  background-color: #d3d3d3;
+  color: #000;
+  border: none;
+  padding: 1vw 2vw;
+  font-size: 1vw;
+  border-radius: 20px;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 700;
+  outline: none;
+  -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.btn-secondary {
+  background-color: rgba(0, 0, 0, 0.2);
+  color: #fff;
+  border: none;
+  padding: 1vw 2vw;
+  font-size: 1vw;
+  border-radius: 20px;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 700;
+  outline: none;
+  -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 80px;
+  width: 100%;
+  background-color: #111111;
+  -webkit-box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+          box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  padding: 0 5vw;
+  color: #d3d3d3;
+}
+
+navbar .nav-logo h1 {
+  font-size: 2vw;
+}
+
+navbar .nav-logo h1 span {
+  color: #0f7173;
+}
+
+navbar .nav-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+navbar .nav-items .nav-item {
+  margin: 0 1vw;
+  text-decoration: none;
+  font-weight: 700;
+  /* transition: all 0.3s ease;
+            &:hover {
+                color: #fff;
+                background-color: #000;
+            } */
+}
+
+navbar .nav-items .nav-item a {
+  color: #d3d3d3;
+  text-decoration: none;
+}
+
+.landing-container {
+  background-image: url("./images/landing-back.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 90vh;
+  padding: 0 5vw;
+}
+
+.landing-container .landing-text {
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  width: 60%;
+  height: 100%;
+}
+
+.landing-container .landing-text h1 {
+  font-size: 4vw;
+  font-weight: 700;
+  margin-bottom: 1vw;
+}
+
+.landing-container .landing-text h2 {
+  font-size: 2vw;
+  font-weight: 400;
+  margin-bottom: 1vw;
+}
+
+.landing-container .buttons {
+  padding-top: 2vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 2vw;
+}
+
+#services {
+  padding: 10vw 5vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#services .services-gif {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-right: 4vw;
+  background-color: #1e6188;
+  padding: 3vw;
+  border-radius: 100px;
+  width: 40%;
+}
+
+#services .services-gif img {
+  width: 70%;
+}
+
+#services .services-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+#services .services-container h2 {
+  font-size: 2.5vw;
+  font-weight: 900;
+}
+
+#services .services-container h3 {
+  font-size: 1.5vw;
+  font-weight: 400;
+}
+
+#services .services-container .service-item {
+  width: 100%;
+  padding-top: 5vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 2vw;
+}
+
+#services .services-container .service-item .service-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 8vw;
+}
+
+#services .services-container .service-item .service-icon img {
+  width: 100%;
+}
+
+#services .services-container .service-item .service-text-1 h3 {
+  color: #f05d5e;
+  font-weight: 700;
+}
+
+#services .services-container .service-item .service-text-2 h3 {
+  color: #0f7173;
+  font-weight: 700;
+}
+
+#services .services-container .service-item .service-text-3 h3 {
+  color: #272932;
+  font-weight: 700;
+}
