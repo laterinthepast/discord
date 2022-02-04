@@ -193,3 +193,12 @@ navbar {
     }
   }
 }
+.divider {
+  width: 100%;
+  padding: 5vw;
+  &-text{
+    text-align: center;
+    font-size: 3vw;
+    font-weight: 900;
+  }
+}

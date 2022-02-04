@@ -262,3 +262,14 @@ navbar .nav-items .nav-item a {
   color: #272932;
   font-weight: 700;
 }
+
+.divider {
+  width: 100%;
+  padding: 5vw;
+}
+
+.divider-text {
+  text-align: center;
+  font-size: 3vw;
+  font-weight: 900;
+}
