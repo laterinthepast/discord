@@ -524,6 +524,122 @@ navbar .nav-items .nav-item a {
   color: #d3d3d3;
 }
 
+.software-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  padding: 10vw 5vw;
+}
+
+.software-container h1 {
+  font-size: 4vw;
+  font-weight: 900;
+  margin-bottom: 3vw;
+}
+
+.software-container h3 {
+  font-size: 1.3vw;
+  font-weight: 700;
+  margin-bottom: 3vw;
+}
+
+.software-container h4 {
+  font-size: 2.1vw;
+  font-weight: 300;
+  margin-bottom: 4vw;
+}
+
+.software-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 2vw;
+}
+
+.software-items .a {
+  background-color: #0f7173;
+}
+
+.software-items .b {
+  background-color: rgba(15, 113, 115, 0.5);
+}
+
+.software-items .c {
+  background-color: rgba(15, 113, 115, 0.1);
+}
+
+.software-items .d {
+  background-color: rgba(240, 93, 94, 0.1);
+}
+
+.software-items .e {
+  background-color: rgba(240, 93, 94, 0.5);
+}
+
+.software-items .f {
+  background-color: #f05d5e;
+}
+
+.software-items .g {
+  background-color: #3c4043;
+}
+
+.software-items .h {
+  background-color: rgba(60, 64, 67, 0.1);
+}
+
+.software-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  width: 25vw;
+  height: 15vw;
+  text-align: left;
+  border-radius: 50px;
+  padding: 2vw;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+          box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.software-item-img {
+  width: 50%;
+}
+
+.software-item-img img {
+  width: 5vw;
+}
+
+.software-item-text {
+  width: 100%;
+}
+
+.software-item-text h3 {
+  margin: 0;
+}
+
 .team-container {
   display: -webkit-box;
   display: -ms-flexbox;
