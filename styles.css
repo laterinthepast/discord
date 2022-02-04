@@ -434,11 +434,16 @@ navbar .nav-items .nav-item a {
 }
 
 .full-text h1 {
-  font-size: 3vw;
+  font-size: 4vw;
   font-weight: 900;
   text-align: center;
 }
 
 .full-text h2 {
+  font-size: 1.6vw;
   color: #000;
+}
+
+.full-text h3 {
+  font-size: 1.1vw;
 }
