@@ -227,13 +227,14 @@ navbar {
   }
 }
 .blue {
-  background-color: rgba($color: #171834, $alpha: 0.2);
+  box-shadow: rgba(23, 24, 52, 1) 0px 40px 50px;
+
   h1 {
     color: #f05d5e;
   }
 }
 .green {
-  background-color: rgba($color: #0f7173, $alpha: 0.4);
+  box-shadow: rgba(15, 113, 115, 1) 0px 40px 50px;
   flex-direction: row-reverse;
   .about-text {
     text-align: left;
@@ -243,7 +244,8 @@ navbar {
   }
 }
 .orange {
-  background-color: rgba($color: #f05d5e, $alpha: 0.2);
+  box-shadow: rgba(240, 93, 94, 1) 0px 40px 50px;
+
   h1 {
     color: #0f7173;
   }
@@ -296,21 +298,110 @@ navbar {
 .full-text {
   display: flex;
   flex-direction: column;
+  gap: 2vw;
   width: 100%;
   justify-content: center;
   align-items: center;
   padding: 10vw;
+  text-align: center;
   h1 {
     font-size: 4vw;
     font-weight: 900;
-    text-align: center;
   }
   h2 {
-    font-size: 1.6vw;
-    color: #000;
+    font-size: 2vw;
   }
   h3 {
-    font-size: 1.1vw;
-    
+    font-size: 1.3vw;
+    font-weight: 700;
   }
 }
+.prices {
+  &-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10vw;
+    .blueP {
+      box-shadow: rgba(240, 93, 94, 0.5) 0px 30px 90px;
+    }
+    .greenP {
+      box-shadow: rgba(15, 113, 115, 0.5) 0px 30px 90px;
+    }
+
+    .prices-item {
+      padding: 2vw;
+      width: 20vw;
+      border-radius: 50px;
+      &-text {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        h1 {
+          font-size: 3vw;
+          font-weight: 900;
+          margin-bottom: 1vw;
+        }
+
+        h4 {
+          font-size: 1.1vw;
+          font-weight: 300;
+          margin-bottom: 1vw;
+        }
+        ul {
+          list-style: none;
+          text-align: center;
+          margin-bottom: 2vw;
+          li {
+            font-size: 1vw;
+            font-weight: 300;
+            margin-bottom: 0.5vw;
+          }
+        }
+        .btn-secondary,
+        .btn-primary {
+          background-color: #000;
+          color: #d3d3d3;
+        }
+      }
+    }
+  }
+}
+
+.team {
+  &-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    padding: 10vw 5vw;
+    gap: 5vw;
+    h1 {
+      width: 100%;
+      font-size: 4vw;
+      font-weight: 900;
+      text-align: left;
+    }
+  }
+    &-wrapper {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      
+    }
+    &-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-items: center;
+    }
+    &-img {
+      width: 50%;
+      img {
+        width: 100%;
+      }
+    }
+  }
+
