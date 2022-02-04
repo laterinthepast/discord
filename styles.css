@@ -16,8 +16,8 @@ body {
   background-color: #d3d3d3;
   color: #000;
   border: none;
-  padding: 1vw 2vw;
-  font-size: 1vw;
+  padding: 10px 20px;
+  font-size: 1rem;
   border-radius: 20px;
   cursor: pointer;
   -webkit-transition: all 0.3s ease-in-out;
@@ -35,8 +35,8 @@ body {
   background-color: rgba(0, 0, 0, 0.2);
   color: #fff;
   border: none;
-  padding: 1vw 2vw;
-  font-size: 1vw;
+  padding: 10px 20px;
+  font-size: 1rem;
   border-radius: 20px;
   cursor: pointer;
   -webkit-transition: all 0.3s ease-in-out;
@@ -50,71 +50,34 @@ body {
           box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
 
-navbar {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  height: 80px;
-  width: 100%;
-  background-color: #111111;
-  -webkit-box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-          box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-  padding: 0 5vw;
-  color: #d3d3d3;
+.navbar {
+  background-color: #111111 !important;
 }
 
-navbar .nav-logo h1 {
-  font-size: 2vw;
+.navbar .nav-item a {
+  color: #d3d3d3 !important;
+  font-weight: 700;
+  font-size: 1rem;
 }
 
-navbar .nav-logo h1 span {
+.nav-logo h1 {
+  font-size: 2rem;
+  color: #fff;
+}
+
+.nav-logo h1 span {
   color: #0f7173;
 }
 
-navbar .nav-items {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-navbar .nav-items .nav-item {
-  margin: 0 1vw;
-  text-decoration: none;
-  font-weight: 700;
-  /* transition: all 0.3s ease;
-            &:hover {
-                color: #fff;
-                background-color: #000;
-            } */
-}
-
-navbar .nav-items .nav-item a {
-  color: #d3d3d3;
-  text-decoration: none;
-}
-
-.landing-container {
+.landing {
   background-image: url("./images/landing-back.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   height: 90vh;
-  padding: 0 5vw;
 }
 
-.landing-container .landing-text {
+.landing .landing-text {
   color: #fff;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -131,22 +94,24 @@ navbar .nav-items .nav-item a {
           align-items: flex-start;
   width: 60%;
   height: 100%;
+  margin: 0;
+  padding-left: 50px;
 }
 
-.landing-container .landing-text h1 {
-  font-size: 4vw;
+.landing .landing-text h1 {
+  font-size: 3rem;
   font-weight: 700;
-  margin-bottom: 1vw;
+  margin-bottom: 10px;
 }
 
-.landing-container .landing-text h2 {
-  font-size: 2vw;
+.landing .landing-text h2 {
+  font-size: 1.5rem;
   font-weight: 400;
   margin-bottom: 1vw;
 }
 
-.landing-container .buttons {
-  padding-top: 2vw;
+.landing .buttons {
+  padding-top: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -156,11 +121,11 @@ navbar .nav-items .nav-item a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 2vw;
+  gap: 20px;
 }
 
 #services {
-  padding: 10vw 5vw;
+  padding: 100px 0px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -179,20 +144,20 @@ navbar .nav-items .nav-item a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-right: 4vw;
   background-color: #1e6188;
   -webkit-box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
           box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
-  padding: 3vw;
+  padding: 30px;
   border-radius: 100px;
-  width: 40%;
+  max-width: 60%;
+  margin-right: 10px;
 }
 
 #services .services-gif img {
-  width: 70%;
+  width: 80%;
 }
 
-#services .services-container {
+#services .services {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -208,19 +173,19 @@ navbar .nav-items .nav-item a {
           align-items: flex-start;
 }
 
-#services .services-container h2 {
-  font-size: 2.5vw;
+#services .services h2 {
+  font-size: 2.5rem;
   font-weight: 900;
 }
 
-#services .services-container h3 {
-  font-size: 1.5vw;
+#services .services h3 {
+  font-size: 1.5rem;
   font-weight: 400;
 }
 
-#services .services-container .service-item {
+#services .services .service-item {
   width: 100%;
-  padding-top: 5vw;
+  padding-top: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -230,10 +195,10 @@ navbar .nav-items .nav-item a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 2vw;
+  gap: 20px;
 }
 
-#services .services-container .service-item .service-icon {
+#services .services .service-item .service-icon {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -243,31 +208,30 @@ navbar .nav-items .nav-item a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 8vw;
+  width: 80px;
 }
 
-#services .services-container .service-item .service-icon img {
+#services .services .service-item .service-icon img {
   width: 100%;
 }
 
-#services .services-container .service-item .service-text-1 h3 {
+#services .services .service-item .service-text-1 h3 {
   color: #f05d5e;
   font-weight: 700;
 }
 
-#services .services-container .service-item .service-text-2 h3 {
+#services .services .service-item .service-text-2 h3 {
   color: #0f7173;
   font-weight: 700;
 }
 
-#services .services-container .service-item .service-text-3 h3 {
+#services .services .service-item .service-text-3 h3 {
   color: #272932;
   font-weight: 700;
 }
 
 .divider {
   width: 100%;
-  padding: 5vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -277,15 +241,19 @@ navbar .nav-items .nav-item a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 5vw;
+  gap: 50px;
 }
 
 .divider-text {
   text-align: center;
-  font-size: 2vw;
   font-weight: 900;
   width: 50%;
   text-align: left;
+}
+
+.divider-text h1 {
+  font-size: 2rem;
+  font-weight: 800;
 }
 
 .divider-text span {
@@ -293,8 +261,8 @@ navbar .nav-items .nav-item a {
 }
 
 .divider-line {
-  border-left: 0.5vw solid #f05d5e;
-  height: 25vw;
+  border-left: 3px solid #f05d5e;
+  height: 250px;
   position: absolute;
   left: 50%;
 }
@@ -356,7 +324,6 @@ navbar .nav-items .nav-item a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 5vw;
 }
 
 .about-container {
@@ -369,9 +336,9 @@ navbar .nav-items .nav-item a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 5vw 0;
+  margin: 50px 0;
   border-radius: 50px;
-  padding: 4vw 2vw;
+  padding: 30px;
   -webkit-box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
           box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
@@ -385,14 +352,14 @@ navbar .nav-items .nav-item a {
 }
 
 .about-text p {
-  font-size: 1.3vw;
+  font-size: 1.1rem;
   line-height: 1.5;
 }
 
 .about-text h1 {
-  margin-bottom: 1.5vw;
+  margin-bottom: 15px;
   font-weight: 900;
-  font-size: 3vw;
+  font-size: 2rem;
 }
 
 .about-img {
@@ -415,7 +382,7 @@ navbar .nav-items .nav-item a {
   -webkit-box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
           box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
   width: 70%;
-  border-radius: 70px;
+  border-radius: 50px;
 }
 
 .full-text {
@@ -426,7 +393,7 @@ navbar .nav-items .nav-item a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  gap: 2vw;
+  gap: 20px;
   width: 100%;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -434,22 +401,23 @@ navbar .nav-items .nav-item a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 10vw;
   text-align: center;
 }
 
 .full-text h1 {
-  font-size: 4vw;
+  font-size: 3rem;
   font-weight: 900;
+  padding-top: 200px;
 }
 
 .full-text h2 {
-  font-size: 2vw;
+  font-size: 2rem;
 }
 
 .full-text h3 {
-  font-size: 1.3vw;
+  font-size: 1rem;
   font-weight: 700;
+  padding-bottom: 100px;
 }
 
 .prices-container {
@@ -464,7 +432,7 @@ navbar .nav-items .nav-item a {
           align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  gap: 10vw;
+  gap: 100px;
 }
 
 .prices-container .blueP {
@@ -478,8 +446,8 @@ navbar .nav-items .nav-item a {
 }
 
 .prices-container .prices-item {
-  padding: 2vw;
-  width: 20vw;
+  padding: 20px;
+  width: 300px;
   border-radius: 50px;
 }
 
@@ -495,27 +463,27 @@ navbar .nav-items .nav-item a {
 }
 
 .prices-container .prices-item-text h1 {
-  font-size: 3vw;
+  font-size: 2rem;
   font-weight: 900;
   margin-bottom: 1vw;
 }
 
 .prices-container .prices-item-text h4 {
-  font-size: 1.1vw;
+  font-size: 1.1rem;
   font-weight: 300;
-  margin-bottom: 1vw;
+  margin-bottom: 10px;
 }
 
 .prices-container .prices-item-text ul {
   list-style: none;
   text-align: center;
-  margin-bottom: 2vw;
+  padding: 0px;
 }
 
 .prices-container .prices-item-text ul li {
-  font-size: 1vw;
+  font-size: 1rem;
   font-weight: 300;
-  margin-bottom: 0.5vw;
+  margin-bottom: 5px;
 }
 
 .prices-container .prices-item-text .btn-secondary,
@@ -524,7 +492,7 @@ navbar .nav-items .nav-item a {
   color: #d3d3d3;
 }
 
-.software-container {
+.software {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -533,25 +501,25 @@ navbar .nav-items .nav-item a {
       -ms-flex-direction: column;
           flex-direction: column;
   text-align: center;
-  padding: 10vw 5vw;
+  padding: 100px 0;
 }
 
-.software-container h1 {
-  font-size: 4vw;
+.software h1 {
+  font-size: 3rem;
   font-weight: 900;
-  margin-bottom: 3vw;
+  margin-bottom: 30px;
 }
 
-.software-container h3 {
-  font-size: 1.3vw;
+.software h3 {
+  font-size: 1.3rem;
   font-weight: 700;
-  margin-bottom: 3vw;
+  margin-bottom: 30px;
 }
 
-.software-container h4 {
-  font-size: 2.1vw;
+.software h4 {
+  font-size: 2.1rem;
   font-weight: 300;
-  margin-bottom: 4vw;
+  margin-bottom: 40px;
 }
 
 .software-items {
@@ -566,7 +534,6 @@ navbar .nav-items .nav-item a {
           align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  gap: 2vw;
 }
 
 .software-items .a {
@@ -602,7 +569,7 @@ navbar .nav-items .nav-item a {
 }
 
 .software-items h4 {
-  padding: 10vw 5vw;
+  padding: 100px 50px;
   font-size: 2.1vw;
   font-weight: 500;
 }
@@ -621,11 +588,12 @@ navbar .nav-items .nav-item a {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  width: 25vw;
-  height: 15vw;
+  width: 320px;
+  height: 200px;
   text-align: left;
   border-radius: 50px;
-  padding: 2vw;
+  padding: 20px;
+  margin: 10px;
   -webkit-box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
           box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
@@ -635,7 +603,7 @@ navbar .nav-items .nav-item a {
 }
 
 .software-item-img img {
-  width: 5vw;
+  width: 50px;
 }
 
 .software-item-text {
@@ -644,9 +612,10 @@ navbar .nav-items .nav-item a {
 
 .software-item-text h3 {
   margin: 0;
+  font-size: 1.2rem;
 }
 
-.team-container {
+.team {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -661,13 +630,11 @@ navbar .nav-items .nav-item a {
       -ms-flex-direction: column;
           flex-direction: column;
   width: 100%;
-  padding: 10vw 5vw;
-  gap: 5vw;
 }
 
-.team-container h1 {
+.team h1 {
   width: 100%;
-  font-size: 4vw;
+  font-size: 3rem;
   font-weight: 900;
   text-align: left;
 }
