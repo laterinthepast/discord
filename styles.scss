@@ -420,6 +420,11 @@ navbar {
   .h {
     background-color: rgba(60, 64, 67, 0.1);
   }
+  h4 {
+    padding: 10vw 5vw;
+    font-size: 2.1vw;
+    font-weight: 500;
+  }
 }
 .software-item {
   display: flex;
@@ -446,6 +451,7 @@ navbar {
     }
   }
 }
+
 
 .team {
   &-container {
