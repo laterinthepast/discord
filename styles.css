@@ -715,3 +715,91 @@ body {
 footnote {
   text-align: center;
 }
+
+@media (max-width: 990px) {
+  .navbar h1 {
+    font-size: 1.2rem;
+  }
+  .landing {
+    background-image: url("./images/logogif.gif");
+    background-size: 60%;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    height: 92vh;
+    background-color: #2b6364;
+    position: relative;
+  }
+  .landing .landing-text {
+    padding: 10px;
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 20%;
+  }
+  .landing .landing-text h1 {
+    font-size: 2rem;
+    font-weight: 900;
+  }
+  .landing .landing-text h2 {
+    font-size: 1.5rem;
+    font-weight: 100;
+    padding: 10px 20px 10px 0;
+  }
+  #services .services-gif {
+    display: none;
+  }
+  .divider {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    max-width: 100%;
+  }
+  .divider-text {
+    width: 100%;
+  }
+  .divider-text h1 {
+    font-size: 1.5rem;
+    font-weight: 900;
+  }
+  .divider .divider-line {
+    display: none;
+  }
+  .about {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .full-text {
+    margin: 0;
+    padding: 12px;
+    width: 100%;
+  }
+  .comm {
+    padding: 0;
+  }
+  .comm h1 {
+    font-size: 2.2rem;
+    font-weight: 900;
+    padding-top: 50px;
+  }
+  .team {
+    padding: 12px;
+  }
+  .contact-icon {
+    gap: 10px;
+    width: auto;
+  }
+  .contact-icon img {
+    width: 50px;
+  }
+  footnote p {
+    font-size: 0.3rem;
+  }
+  .software-end h4 {
+    font-size: 1.2rem;
+    text-align: justify;
+    font-weight: 400;
+  }
+}
